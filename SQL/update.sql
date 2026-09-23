@@ -1,0 +1,1 @@
+UPDATE courses SET Test_1 = :test1, Test_2 = :test2, Test_3 = :test3, Final_Exam = :finalExam WHERE Student_ID = :studentNumber AND Course_ID = :courseCode

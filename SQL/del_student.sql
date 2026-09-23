@@ -1,0 +1,1 @@
+DELETE FROM courses WHERE Student_ID = :student_id AND Course_ID = :course_id

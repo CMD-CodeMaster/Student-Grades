@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS names
+(
+    Student_ID VARCHAR(9) NOT NULL,
+    Student_NAME VARCHAR(50) NOT NULL,
+    UNIQUE(Student_ID),
+    PRIMARY KEY(Student_ID)
+);
+
+CREATE TABLE IF NOT EXISTS courses 
+(
+    Student_ID VARCHAR(9) NOT NULL,
+    Course_ID VARCHAR(10) NOT NULL,
+    Test_1 FLOAT DEFAULT 0,
+    Test_2 FLOAT DEFAULT 0,
+    Test_3 FLOAT DEFAULT 0,
+    Final_Exam FLOAT DEFAULT 0,
+    FOREIGN KEY(Student_ID) REFERENCES names(Student_ID)
+);
